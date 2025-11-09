@@ -1,5 +1,5 @@
 site_name: Rasterizador LOVE2D
-site_description: CUbito 3d uwu, epico, muy epico
+site_description: Cubito 3d uwu, epico, muy epico
 site_author: HambuP
 repo_url: https://github.com/HambuP/Rasterizador_LOVE2D
 repo_name: HambuP/Rasterizador_LOVE2D
@@ -7,25 +7,30 @@ repo_name: HambuP/Rasterizador_LOVE2D
 theme:
   name: material
   language: es
+  font:
+    text: Poppins
+    code: Roboto Mono
   palette:
-    # Modo claro
-    - scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-7
-        name: Cambiar a modo oscuro
-    # Modo oscuro
+    # Modo oscuro por defecto (primero en la lista)
     - scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: deep purple
+      accent: purple
       toggle:
         icon: material/brightness-4
         name: Cambiar a modo claro
+    # Modo claro como alternativa
+    - scheme: default
+      primary: indigo
+      accent: light blue
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
   features:
     - navigation.tabs
     - navigation.sections
     - navigation.top
+    - navigation.instant
+    - navigation.tracking
     - search.suggest
     - search.highlight
     - content.code.copy
